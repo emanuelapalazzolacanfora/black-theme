@@ -200,7 +200,7 @@ header {
     width: 90%;
 }
 .album-support{
-    margin: 2rem auto 2rem 0;
+    margin: auto;
     width: calc(300px + 10%);
 }
 
@@ -253,7 +253,6 @@ header {
     margin: 1rem;
 }
 .player, .tour-cont{
-    width: calc(100% - 490px);
     padding: 10px;
     background-color: lightgrey;
     margin: auto 0;
@@ -332,59 +331,7 @@ header {
     width: calc(100% - 16rem);
 }
 .Slideshow {
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-}
-.Slideshow-Content {
-    position: relative;
-    height: 100%;
-}
-.Slideshow-Content img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(0 1%, 100% 0, 67% 100%, 0% 100%);
-    object-fit: cover;
-    animation-name: fadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 20s;
-    animation-direction: alternate;
-}
-.Slideshow-Content img:nth-of-type(1) {
-    animation-delay: 15s;
-}
-.Slideshow-Content img:nth-of-type(2) {
-    animation-delay: 10s;
-}
-.Slideshow-Content img:nth-of-type(3) {
-    animation-delay: 5s;
-}
-.Slideshow-Content img:nth-of-type(4) {
-    animation-delay: 0;
-}
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-   }
-    30% {
-        opacity: 0;
-   }
-    35% {
-        opacity: 1;
-   }
-    65% {
-        opacity: 1;
-   }
-    70% {
-        opacity: 0;
-   }
-    100% {
-        opacity: 0;
-   }
+    display: none;
 }
 #album h2, #biographie h2, #videos h2, #tour h2, #newsletter h2{
     color: black;
@@ -514,6 +461,13 @@ footer {
         justify-content: center;
         width: 90%;
     }
+    .album-support{
+        margin: 2rem auto 2rem 0;
+        width: calc(300px + 10%);
+    }
+    .player {
+        width: calc(100% - 490px);
+    }
     .videos{
         display: flex;
         justify-content: space-between;
@@ -522,6 +476,61 @@ footer {
     .videos-elt {
         margin: 0;
         width: auto;
+    }
+    .Slideshow {
+        height: 300px;
+        width: 300px;
+        overflow: hidden;
+    }
+    .Slideshow-Content {
+        position: relative;
+        height: 100%;
+    }
+    .Slideshow-Content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 1%, 100% 0, 67% 100%, 0% 100%);
+        object-fit: cover;
+        animation-name: fadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+        animation-direction: alternate;
+    }
+    .Slideshow-Content img:nth-of-type(1) {
+        animation-delay: 15s;
+    }
+    .Slideshow-Content img:nth-of-type(2) {
+        animation-delay: 10s;
+    }
+    .Slideshow-Content img:nth-of-type(3) {
+        animation-delay: 5s;
+    }
+    .Slideshow-Content img:nth-of-type(4) {
+        animation-delay: 0;
+    }
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+       }
+        30% {
+            opacity: 0;
+       }
+        35% {
+            opacity: 1;
+       }
+        65% {
+            opacity: 1;
+       }
+        70% {
+            opacity: 0;
+       }
+        100% {
+            opacity: 0;
+       }
     }
     .contact{
         align-items: flex-start;
