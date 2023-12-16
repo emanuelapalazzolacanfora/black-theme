@@ -491,6 +491,7 @@ footer {
         width: auto;
     }
     .Slideshow {
+        display:block;
         height: 300px;
         width: 300px;
         overflow: hidden;
