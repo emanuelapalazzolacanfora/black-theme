@@ -105,9 +105,6 @@ header {
   nav a:hover::before {
     width: 100%;
   }
-  #ancre nav a::before {
-    width: 100%;
-  }
   
 .container{
     height: 500px;
@@ -141,13 +138,7 @@ header {
 }
 
 .slider__container h1{
-    position: absolute;
-    left: 65%;
-    top: 56%;
-    margin-bottom: 0;
-    color: ghostwhite;
-    font-size: 3.2rem;
-    opacity: 0.8;
+display: none;
 }
 /* PROGRESS BAR */
 .progress{
@@ -200,15 +191,15 @@ header {
     width: 90%;
 }
 .album-support{
-    margin: auto;
-    width: calc(300px + 10%);
+    margin: 0;
+    width: calc(230px + 10%);
 }
 
 .album-disc__au {
     z-index: -1;
     position: relative;
-    width: 290px;
-    height: 290px;
+    width: 220px;
+    height: 220px;
     background-size: cover;
     border: 5px white solid;
     border-radius: 50%;
@@ -243,8 +234,8 @@ header {
     top: -4%;
     left: -2%;
     margin: 0;
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
     background-image: url(imgs/pochette.png);
     background-size: cover;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.56);
@@ -325,10 +316,10 @@ header {
     margin: auto;
     text-align: center;
 }
-.biographie p{
+.biographie p {
     margin: 1rem auto;
     text-align: justify;
-    width: calc(100% - 16rem);
+    width: 90%;
 }
 .Slideshow {
     display: none;
@@ -342,7 +333,7 @@ header {
 }
 .tour-cont {
     margin: auto;
-    width: 80%;
+    width: 100%;
     pointer-events: none;
 }
 .tour-elt {
@@ -465,6 +456,28 @@ footer {
         margin: 2rem auto 2rem 0;
         width: calc(300px + 10%);
     }
+    
+    .album-disc__au {
+        z-index: -1;
+        position: relative;
+        width: 290px;
+        height: 290px;
+        background-size: cover;
+        border: 5px white solid;
+        border-radius: 50%;
+    }
+    .album-cover__au {
+        z-index: 55;
+        position: absolute;
+        top: -4%;
+        left: -2%;
+        margin: 0;
+        width: 300px;
+        height: 300px;
+        background-image: url(imgs/pochette.png);
+        background-size: cover;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.56);
+    }
     .player {
         width: calc(100% - 490px);
     }
@@ -559,6 +572,25 @@ footer {
     }
 }
 @media screen and (min-width: 600px) {
+    .slider__container h1{
+        position: absolute;
+        left: 65%;
+        top: 56%;
+        margin-bottom: 0;
+        color: ghostwhite;
+        font-size: 3.2rem;
+        opacity: 0.8;
+    }
+    .biographie p{
+        margin: 1rem auto;
+        text-align: justify;
+        width: calc(100% - 16rem);
+    }
+    .tour-cont {
+        margin: auto;
+        width: 80%;
+        pointer-events: none;
+    }
     .image__au {
         grid-row: span 2 / auto; /*span = da onde começa até*/ /*start / end*/ 
     }
