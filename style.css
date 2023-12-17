@@ -71,7 +71,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 0 1.3rem 1.3rem;
 }
 header::before {
@@ -753,7 +753,7 @@ footer {
 }
 @media (max-width:768px){
     header{
-        width: 100%;
+        width: 100vw;
         height:80px;
     }
     .icons{
