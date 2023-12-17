@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/98321ca9ae.js" crossorigin="anonymous"></script>
     <title>Nom de l'artiste</title>
 </head>
 
 <body>
     <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>            
+            <i class="fa-solid fa-xmark" id="close-icon"></i>
+        </label>
         <nav>
             <ul>
-                <li><a class="lien" id="ancre" href="index.html">Home</a></li>
-                <li><a href="#album">Album</a></li>
-                <li><a href="#videos">Video</a></li>
-                <li><a href="#biographie">Biographie</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#newsletter">Newletter</a></li>
-                <li><a href="photos.html">Photos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a style="--i:0;" href="index.html">Home</a></li>
+                <li><a style="--i:1;" href="#album">Album</a></li>
+                <li><a style="--i:2;" href="#videos">Video</a></li>
+                <li><a style="--i:3;" href="#biographie">Biographie</a></li>
+                <li><a style="--i:4;" href="#tour">Tour</a></li>
+                <li><a style="--i:5;" href="#newsletter">Newletter</a></li>
+                <li><a style="--i:6;" href="photos.html">Photos</a></li>
+                <li><a style="--i:7;" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -165,7 +170,7 @@
             <div class="tour-list">
                 <div class="tour-elt">
                     <div class="tour-date">
-                        Jour/Mois
+                        00/00
                     </div>
                     <div class="tour-place">
                         Lieu
@@ -176,7 +181,7 @@
                 </div>
                 <div class="tour-elt">
                     <div class="tour-date">
-                        Jour/Mois
+                        00/00
                     </div>
                     <div class="tour-place">
                         Lieu
@@ -187,7 +192,7 @@
                 </div>
                 <div class="tour-elt">
                     <div class="tour-date">
-                        Jour/Mois
+                        00/00
                     </div>
                     <div class="tour-place">
                         Lieu
@@ -225,7 +230,7 @@
                     xml:space="preserve">
                     <style type="text/css">
                         .st0 {
-                            fill: whitesmoke;
+                            fill: var(--bg-light);
                         }
                     </style>
                     <path class="st0"
@@ -235,8 +240,6 @@
         </div>
     </footer>
     <script src="main.js" async></script>
-    <script src="lien.js"></script>
-
 </body>
 
 </html>
