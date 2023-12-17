@@ -804,4 +804,7 @@ footer {
         opacity: 1;
         transition-delay: calc(.15s * var(--i));
     }
+    #album h2, #videos h2, #biographie, #tour h2, #newsletter .newsletter-cont {
+        padding-top: 75px;
+    }
 }
