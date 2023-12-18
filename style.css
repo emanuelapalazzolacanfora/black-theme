@@ -72,7 +72,7 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    padding: 0 1rem 1rem;
+    padding: 0 .5rem .5rem;
 }
 header::before {
     z-index: -1;
@@ -92,7 +92,7 @@ header::after {
 }
 
 nav {
-    padding-right: 1rem;
+    padding-right: .5rem;
 }
 
 nav ul {
@@ -104,7 +104,7 @@ nav ul {
 nav li {
     display: block;
     margin-left: 70px;
-    padding-top: 23px;
+    padding-top: .5rem;
     position: relative;
 }
 
