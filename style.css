@@ -3,8 +3,8 @@
     --font-dark: hsl(0, 0%, 5%, 0.9);
     --bg-light: hsl(0, 0%, 96%);
     /*whitesmoke*/
-    --bg-accent:hsla(41, 85%, 32%, 0.8);
-    --bg-medium: hsl(0, 0%, 50%, 0.15);
+    --bg-accent:hsl(23, 95%, 17%);
+    --bg-medium: hsl(0, 0%, 100%);
     --bg-dark: hsl(0, 0%, 5%, 0.9);
     /*black*/
     --shadow-dark: hsl(0, 0%, 0%, 0.56)
