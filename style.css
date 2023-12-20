@@ -431,10 +431,6 @@ nav a:hover::before {
     width: 90%;
     font-family: sans-serif;
     text-align: justify;
-    background: linear-gradient(45deg, black, whitesmoke);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--color-transparent);
 }
 
 .Slideshow {
