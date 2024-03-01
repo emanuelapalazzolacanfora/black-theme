@@ -766,9 +766,9 @@ footer {
 }
 
 @media (max-width:992px){
-    header{
-        padding:.5rem 5%;
-    }
+header {
+    padding: 0.5rem 0;
+}
 }
 @media (max-width:768px){
     header{
